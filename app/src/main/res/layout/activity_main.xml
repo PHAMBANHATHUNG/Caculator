@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="302dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307">
+
+        <RadioButton
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plus" />
+
+        <RadioButton
+            android:id="@+id/remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Remove" />
+
+        <RadioButton
+            android:id="@+id/sqr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sqr" />
+
+        <RadioButton
+            android:id="@+id/split"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/split" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="@string/one"
+        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/two"
+        app:layout_constraintBottom_toBottomOf="@+id/one"
+        app:layout_constraintEnd_toStartOf="@+id/three" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="@string/three"
+        app:layout_constraintBaseline_toBaselineOf="@+id/two"
+        app:layout_constraintEnd_toEndOf="@+id/six" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="@string/four"
+        app:layout_constraintBaseline_toBaselineOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/five" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/five"
+        app:layout_constraintBottom_toTopOf="@+id/eight"
+        app:layout_constraintEnd_toStartOf="@+id/six" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="@string/six"
+        app:layout_constraintBaseline_toBaselineOf="@+id/five"
+        app:layout_constraintEnd_toEndOf="@+id/nine" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/seven"
+        app:layout_constraintEnd_toStartOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/one" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toBottomOf="@+id/seven"
+        app:layout_constraintEnd_toStartOf="@+id/nine" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:text="@string/nine"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="@string/Del"
+        app:layout_constraintEnd_toStartOf="@+id/Res"
+        app:layout_constraintTop_toTopOf="@+id/Res" />
+
+    <Button
+        android:id="@+id/Res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/Res"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Ex"
+        app:layout_constraintEnd_toStartOf="@+id/Ex" />
+
+    <Button
+        android:id="@+id/Ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Ex"
+        app:layout_constraintStart_toStartOf="@+id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/nine" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="89dp"
+        android:layout_height="77dp"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        tools:ignore="labelfor"
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/first"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:importantForAutofill="no" />
+
+    <EditText
+        tools:ignore="labelfor"
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/second"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135"
+        android:importantForAutofill="no" />
+</androidx.constraintlayout.widget.ConstraintLayout>
